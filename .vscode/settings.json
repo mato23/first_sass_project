@@ -1,0 +1,8 @@
+{
+    "screencastMode.fontSize": 46,
+    "breadcrumbs.showStrings": false,
+    "workbench.statusBar.visible": true,
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.showArrays": true,
+    "breadcrumbs.icons": true
+}

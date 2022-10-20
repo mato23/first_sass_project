@@ -1,0 +1,56 @@
+
+$debug: false ;
+
+@import  "normalize";       // Normalize css
+@import  "debug";           // Repairs and stuff
+@import  "mix_fun";         // Mixins and Funkcions
+@import  "grafic";          // Colors, typography
+@import  "C_Variables";     // Content Variables
+
+
+@each $page, $color in $pages {
+    
+    .#{$page} {
+        header {
+            background-color: $color;
+            .active{
+                color: darken($color, 15% );
+            }
+            .shadow{
+                text-shadow: 2px 1px 2px darken($color, 30%);
+            }
+            ul{
+                background-color: $color-bg;
+                padding: 1.5% 0;
+                margin: 0 auto;
+            }
+            li{
+                display:inline-block;
+                list-style: none;
+            }
+            a{
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                list-style: none;
+                align-items: center;
+                padding: $navPad;
+                color: #fff;
+            }
+        }
+        h1{
+            border-top: 2px solid darken( $color, 30% );
+            color: $txt-color;
+            padding: 5%;
+            margin: 0;
+            vertical-align: center;    
+            
+            text-transform: uppercase;
+            text-align: center;
+            
+            font-weight: bold;
+            font-family: $header-Ffamily;
+            font-size: $header-Fsize;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+// element around floating table 
+@mixin clearfix{
+    &:before,
+    &:after{
+        content:" " ;
+        display: table; 
+        }
+    &::after{
+        clear: both;
+    }
+}
+
+// vseobecna funkcia na target/context=%
+@function responsive($size_in_px, $context:16, $value:em ){
+    $respons: ($size_in_px / $context + $value);
+    @return $respons;
+}

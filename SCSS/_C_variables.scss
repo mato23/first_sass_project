@@ -1,17 +1,25 @@
+//common variables-----in px-----------------
+$max_width: 1024;
+$min_width: 250;
 
 //Common Header------------------------------
 
 $navPad: 2.2em;
 
-$color-bg:      #2f313c;
-$txt-color:     #fff;
-$txt-Fsize:     2em;
+$txt-color:         #292929;
+$txt-Fsize:           2em;
+$nav-color:         #f9f9f9;
 
-$header-Ffamily:verdana, sans-serif;
-$header-Fsize:  5em;
+$header-txt-color:  #f9f9f9;
+$header-Ffamily:      verdana, sans-serif;
+$header-Fsize:        3em;
+
+$footer-bg-color:   #2f313c;
+$footer-H2-size:      1.1rem;
+
 $pages:( 
-    'home':     #ffd256,
-    'gallery':  #fd685b,
-    'about':    #8fd2d1,
+    'home':     #fd685b,
+    'gallery':  #ffd256,
+    'about':    #8fd2ae,
     'contact':  #019dcd,
 );

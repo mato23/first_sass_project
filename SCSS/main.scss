@@ -11,8 +11,15 @@ $debug: false ;
 @each $page, $color in $pages {
     
     .#{$page} {
+        body{
+            background: red;
+        }
         header {
-            background-color: $color;
+            max-width: $max_width;
+            nav {
+                text-align: center;
+                min-width: responsive(250,$max_width,em);
+            }
             .active{
                 color: darken($color, 15% );
             }
@@ -20,7 +27,7 @@ $debug: false ;
                 text-shadow: 2px 1px 2px darken($color, 30%);
             }
             ul{
-                background-color: $color-bg;
+                background-color: $nav_color;
                 padding: 1.5% 0;
                 margin: 0 auto;
             }
@@ -29,21 +36,23 @@ $debug: false ;
                 list-style: none;
             }
             a{
-                font-weight: bold;
-                text-transform: uppercase;
                 text-decoration: none;
                 list-style: none;
                 align-items: center;
                 padding: $navPad;
-                color: #fff;
+                color: lighten( $footer-bg-color, 10);
             }
         }
-        h1{
-            border-top: 2px solid darken( $color, 30% );
+        main{
+            background-color: $color;
             color: $txt-color;
+        }
+        h1{
+            border-top: 0.1rem solid darken( $color, 30% );
+            color: $header-txt-color;
             padding: 5%;
             margin: 0;
-            vertical-align: center;    
+            vertical-align: center;
             
             text-transform: uppercase;
             text-align: center;
@@ -51,6 +60,37 @@ $debug: false ;
             font-weight: bold;
             font-family: $header-Ffamily;
             font-size: $header-Fsize;
+        }
+    }
+    footer{
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: $footer-bg-color;
+        color: $nav-color;
+        @include clearfix;
+        h2{
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: $footer-H2-size;
+            margin: 0 auto;
+            font-weight: bold;
+            color: darken($footer-bg-color , 4);
+        }
+        article{
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        aside{
+            padding: 1rem;
+            width: 80%;
+            margin:auto;
+            a{
+                font-size: smaller;
+                color:lighten($footer-bg-color,50);
+                margin: 0 auto;
+            }
         }
     }
 }

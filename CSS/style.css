@@ -233,17 +233,24 @@ input[type=checkbox], input[type=radio] {
   padding: 0;
 }
 
+.home body {
+  background: red;
+}
 .home header {
-  background-color: #ffd256;
+  max-width: 1024;
+}
+.home header nav {
+  text-align: center;
+  min-width: 0.244140625em;
 }
 .home header .active {
-  color: #ffbe0a;
+  color: #fc220f;
 }
 .home header .shadow {
-  text-shadow: 2px 1px 2px #bc8a00;
+  text-shadow: 2px 1px 2px #bd1102;
 }
 .home header ul {
-  background-color: #2f313c;
+  background-color: #f9f9f9;
   padding: 1.5% 0;
   margin: 0 auto;
 }
@@ -252,17 +259,19 @@ input[type=checkbox], input[type=radio] {
   list-style: none;
 }
 .home header a {
-  font-weight: bold;
-  text-transform: uppercase;
   text-decoration: none;
   list-style: none;
   align-items: center;
   padding: 2.2em;
-  color: #fff;
+  color: #454859;
+}
+.home main {
+  background-color: #fd685b;
+  color: #292929;
 }
 .home h1 {
-  border-top: 2px solid #bc8a00;
-  color: #fff;
+  border-top: 0.1rem solid #bd1102;
+  color: #f9f9f9;
   padding: 5%;
   margin: 0;
   vertical-align: center;
@@ -270,20 +279,65 @@ input[type=checkbox], input[type=radio] {
   text-align: center;
   font-weight: bold;
   font-family: verdana, sans-serif;
-  font-size: 5em;
+  font-size: 3em;
 }
 
+footer {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #2f313c;
+  color: #f9f9f9;
+}
+footer:before, footer:after {
+  content: " ";
+  display: table;
+}
+footer::after {
+  clear: both;
+}
+footer h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #262831;
+}
+footer article {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+footer aside {
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+}
+footer aside a {
+  font-size: smaller;
+  color: #acafbe;
+  margin: 0 auto;
+}
+
+.gallery body {
+  background: red;
+}
 .gallery header {
-  background-color: #fd685b;
+  max-width: 1024;
+}
+.gallery header nav {
+  text-align: center;
+  min-width: 0.244140625em;
 }
 .gallery header .active {
-  color: #fc220f;
+  color: #ffbe0a;
 }
 .gallery header .shadow {
-  text-shadow: 2px 1px 2px #bd1102;
+  text-shadow: 2px 1px 2px #bc8a00;
 }
 .gallery header ul {
-  background-color: #2f313c;
+  background-color: #f9f9f9;
   padding: 1.5% 0;
   margin: 0 auto;
 }
@@ -292,17 +346,19 @@ input[type=checkbox], input[type=radio] {
   list-style: none;
 }
 .gallery header a {
-  font-weight: bold;
-  text-transform: uppercase;
   text-decoration: none;
   list-style: none;
   align-items: center;
   padding: 2.2em;
-  color: #fff;
+  color: #454859;
+}
+.gallery main {
+  background-color: #ffd256;
+  color: #292929;
 }
 .gallery h1 {
-  border-top: 2px solid #bd1102;
-  color: #fff;
+  border-top: 0.1rem solid #bc8a00;
+  color: #f9f9f9;
   padding: 5%;
   margin: 0;
   vertical-align: center;
@@ -310,20 +366,65 @@ input[type=checkbox], input[type=radio] {
   text-align: center;
   font-weight: bold;
   font-family: verdana, sans-serif;
-  font-size: 5em;
+  font-size: 3em;
 }
 
+footer {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #2f313c;
+  color: #f9f9f9;
+}
+footer:before, footer:after {
+  content: " ";
+  display: table;
+}
+footer::after {
+  clear: both;
+}
+footer h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #262831;
+}
+footer article {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+footer aside {
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+}
+footer aside a {
+  font-size: smaller;
+  color: #acafbe;
+  margin: 0 auto;
+}
+
+.about body {
+  background: red;
+}
 .about header {
-  background-color: #8fd2d1;
+  max-width: 1024;
+}
+.about header nav {
+  text-align: center;
+  min-width: 0.244140625em;
 }
 .about header .active {
-  color: #58bcbb;
+  color: #58bc87;
 }
 .about header .shadow {
-  text-shadow: 2px 1px 2px #398f8d;
+  text-shadow: 2px 1px 2px #398f61;
 }
 .about header ul {
-  background-color: #2f313c;
+  background-color: #f9f9f9;
   padding: 1.5% 0;
   margin: 0 auto;
 }
@@ -332,17 +433,19 @@ input[type=checkbox], input[type=radio] {
   list-style: none;
 }
 .about header a {
-  font-weight: bold;
-  text-transform: uppercase;
   text-decoration: none;
   list-style: none;
   align-items: center;
   padding: 2.2em;
-  color: #fff;
+  color: #454859;
+}
+.about main {
+  background-color: #8fd2ae;
+  color: #292929;
 }
 .about h1 {
-  border-top: 2px solid #398f8d;
-  color: #fff;
+  border-top: 0.1rem solid #398f61;
+  color: #f9f9f9;
   padding: 5%;
   margin: 0;
   vertical-align: center;
@@ -350,11 +453,56 @@ input[type=checkbox], input[type=radio] {
   text-align: center;
   font-weight: bold;
   font-family: verdana, sans-serif;
-  font-size: 5em;
+  font-size: 3em;
 }
 
+footer {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #2f313c;
+  color: #f9f9f9;
+}
+footer:before, footer:after {
+  content: " ";
+  display: table;
+}
+footer::after {
+  clear: both;
+}
+footer h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #262831;
+}
+footer article {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+footer aside {
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+}
+footer aside a {
+  font-size: smaller;
+  color: #acafbe;
+  margin: 0 auto;
+}
+
+.contact body {
+  background: red;
+}
 .contact header {
-  background-color: #019dcd;
+  max-width: 1024;
+}
+.contact header nav {
+  text-align: center;
+  min-width: 0.244140625em;
 }
 .contact header .active {
   color: #016381;
@@ -363,7 +511,7 @@ input[type=checkbox], input[type=radio] {
   text-shadow: 2px 1px 2px #002835;
 }
 .contact header ul {
-  background-color: #2f313c;
+  background-color: #f9f9f9;
   padding: 1.5% 0;
   margin: 0 auto;
 }
@@ -372,17 +520,19 @@ input[type=checkbox], input[type=radio] {
   list-style: none;
 }
 .contact header a {
-  font-weight: bold;
-  text-transform: uppercase;
   text-decoration: none;
   list-style: none;
   align-items: center;
   padding: 2.2em;
-  color: #fff;
+  color: #454859;
+}
+.contact main {
+  background-color: #019dcd;
+  color: #292929;
 }
 .contact h1 {
-  border-top: 2px solid #002835;
-  color: #fff;
+  border-top: 0.1rem solid #002835;
+  color: #f9f9f9;
   padding: 5%;
   margin: 0;
   vertical-align: center;
@@ -390,7 +540,45 @@ input[type=checkbox], input[type=radio] {
   text-align: center;
   font-weight: bold;
   font-family: verdana, sans-serif;
-  font-size: 5em;
+  font-size: 3em;
+}
+
+footer {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #2f313c;
+  color: #f9f9f9;
+}
+footer:before, footer:after {
+  content: " ";
+  display: table;
+}
+footer::after {
+  clear: both;
+}
+footer h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #262831;
+}
+footer article {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+footer aside {
+  padding: 1rem;
+  width: 80%;
+  margin: auto;
+}
+footer aside a {
+  font-size: smaller;
+  color: #acafbe;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

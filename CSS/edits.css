@@ -1,0 +1,43 @@
+
+.uprava {
+    list-style: none;
+}
+
+ul{
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+}
+
+main{
+    height: 100px;
+}
+.uprava li{
+    display: inline;
+    margin: 0 1em;
+}
+
+.uprava li:nth-child(odd){
+    opacity: 0.5;
+}
+.uprava a{
+    color: white;
+    padding: 3px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 2px #bd1102;
+}
+
+.uprava a:hover,
+        a:active{        
+    text-shadow: 4px 2px 2px #bd1102;
+    border-bottom: 2px solid;
+}
+
+.oznaceny{
+    color: #2f313c;
+    text-shadow: 4px 2px 2px white;
+    border-bottom: 2px solid #bd1102;
+}
+

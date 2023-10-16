@@ -10,8 +10,11 @@
     }
 }
 
-// vseobecna funkcia na target/context=%
-@function responsive($size_in_px, $context:16, $value:em ){
-    $respons: ($size_in_px / $context + $value);
-    @return $respons;
+// responsive funkction to make responsive stuff 
+// target/context=%
+// vychodzia hodnota kontextu je podla velikosti fontu 16 
+// a responzivna hodnota v jednotkach em
+
+@function responsive( $size_in_px, $context:16, $value:em ){
+    @return ($size_in_px / $context) + $value;
 }
